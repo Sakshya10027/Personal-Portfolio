@@ -15,7 +15,6 @@ body {
   background-color: #ffffff;
 }
 
-/* === VARIABLES === */
 :root {
   --primary-color: #6366f1;
   --primary-dark: #4338ca;
@@ -28,7 +27,7 @@ body {
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* === NAVIGATION === */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -108,7 +107,7 @@ body {
   transition: var(--transition);
 }
 
-/* === HERO SECTION === */
+
 .hero {
   background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
   min-height: 100vh;
@@ -195,16 +194,10 @@ body {
 .hero-image {
   width: 400px;
   height: 400px;
-  /* background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--primary-dark)
-  ); */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* box-shadow: var(--shadow-hover); */
   animation: float 6s ease-in-out infinite;
 }
 
@@ -224,7 +217,7 @@ body {
   }
 }
 
-/* === SECTION STYLES === */
+
 .section {
   padding: 5rem 0;
 }
@@ -258,7 +251,6 @@ body {
   margin: 0 auto;
 }
 
-/* === ABOUT SECTION === */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -296,7 +288,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* === SKILLS SECTION === */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -349,7 +340,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* === PORTFOLIO SECTION === */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -427,7 +417,6 @@ body {
   font-weight: 500;
 }
 
-/* === TESTIMONIALS SECTION === */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -504,7 +493,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* === CONTACT SECTION === */
+
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -631,7 +620,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* === FOOTER === */
+
 .footer {
   background: var(--text-primary);
   color: white;
@@ -678,7 +667,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* === RESPONSIVE DESIGN === */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;

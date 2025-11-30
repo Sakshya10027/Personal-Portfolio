@@ -11,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Navbar background on scroll
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 100) {
@@ -23,7 +22,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Fade in animation on scroll
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -37,44 +35,44 @@ const observer = new IntersectionObserver(function (entries) {
   });
 }, observerOptions);
 
-// Observe all sections for fade in effect
+
 document.querySelectorAll(".section").forEach((section) => {
   section.classList.add("fade-in");
   observer.observe(section);
 });
 
-// Contact form handling
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Get form data
+
   const formData = new FormData(this);
   const name = formData.get("name");
   const email = formData.get("email");
   const subject = formData.get("subject");
   const message = formData.get("message");
 
-  // Simple validation
+
   if (!name || !email || !subject || !message) {
     alert("Please fill in all fields.");
     return;
   }
 
-  // Email validation
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert("Please enter a valid email address.");
     return;
   }
 
-  // Simulate form submission
+
   const submitBtn = this.querySelector(".submit-btn");
   const originalText = submitBtn.textContent;
 
   submitBtn.textContent = "Sending...";
   submitBtn.disabled = true;
 
-  // Simulate API call delay
+
   setTimeout(() => {
     alert("Thank you for your message! I'll get back to you soon.");
     this.reset();
@@ -83,13 +81,13 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }, 2000);
 });
 
-// Mobile menu toggle (basic implementation)
+
 document.querySelector(".mobile-menu").addEventListener("click", function () {
   const navLinks = document.querySelector(".nav-links");
   navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
 });
 
-// Typing effect for hero subtitle
+
 function typeWriter(element, text, speed = 100) {
   let i = 0;
   element.innerHTML = "";
@@ -104,7 +102,7 @@ function typeWriter(element, text, speed = 100) {
   type();
 }
 
-// Initialize typing effect when page loads
+
 window.addEventListener("load", function () {
   const subtitle = document.querySelector(".hero-content .subtitle");
   if (subtitle) {
@@ -112,7 +110,7 @@ window.addEventListener("load", function () {
   }
 });
 
-// Add active nav link highlighting
+
 window.addEventListener("scroll", function () {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
