@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshya Patel - Full Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "aAnNuYRgYmkdw0Shx",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">SP</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="subtitle">Full Stack Developer</div>
+          <h1>Sakshya Patel</h1>
+          <p>
+            I create beautiful, functional web applications that solve real
+            problems and deliver exceptional user experiences. Let's build
+            something amazing together.
+          </p>
+          <a href="#contact" class="cta-button">
+            Get In Touch <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img  class="hero-image" src="assets/img/preview.jpg" alt="">
+            <!-- <i class="fas fa-code"></i> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Passionate developer with 1+ years of experience creating digital
+            solutions
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img class="about-image"src="assets/img/about2.jpg" alt="">
+            <!-- <i class="fas fa-user"></i> -->
+          </div>
+          <div class="about-text">
+            <h3>Turning Ideas Into Reality</h3>
+            <p>
+              I'm a full-stack developer based in San Francisco, specializing in
+              modern web technologies and user-centered design. My journey began
+              with a computer science degree from UC Berkeley, and I've since
+              worked with startups and Fortune 500 companies alike.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and creating
+              intuitive user interfaces. When I'm not coding, you'll find me
+              exploring new technologies, contributing to open source projects,
+              or hiking the beautiful trails around the Bay Area.
+            </p>
+            <p>
+              My approach combines technical expertise with creative
+              problem-solving to deliver solutions that not only work flawlessly
+              but also provide exceptional user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">
+            Technologies and tools I use to bring ideas to life
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h4>Frontend Development</h4>
+            <p>React, Vue.js, TypeScript, HTML5, CSS3, Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h4>Backend Development</h4>
+            <p>Node.js, Python, Express, Django, RESTful APIs</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h4>Database Management</h4>
+            <p>MongoDB, PostgreSQL, MySQL, Redis</p>
+          </div>
+          <!-- <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h4>Cloud & DevOps</h4>
+            <p>AWS, Docker, Kubernetes, CI/CD, Git</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4>Mobile Development</h4>
+            <p>React Native, Flutter, Progressive Web Apps</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Analytics & SEO</h4>
+            <p>Google Analytics, Search Console, Performance Optimization</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A selection of my recent work and personal projects
+          </p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <h4>E-Commerce Platform</h4>
+              <p>
+                A full-featured online store with payment integration, inventory
+                management, and analytics dashboard. Built for a growing retail
+                business with 10k+ monthly users.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="project-content">
+              <h4>Data Visualization Dashboard</h4>
+              <p>
+                Interactive dashboard for analyzing business metrics and KPIs.
+                Features real-time data updates, custom charts, and automated
+                report generation.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <h4>Task Management App</h4>
+              <p>
+                Cross-platform mobile app for team collaboration and project
+                management. Includes offline sync, push notifications, and time
+                tracking features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">
+            Ready to start your next project? Get in touch and let's create
+            something amazing
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question, want to collaborate, or just say
+              hello, feel free to reach out.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p>patelsakshya2@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p>+91 9696053006</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h5>Location</h5>
+                <p>Lucknow , UP</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn" onclick="sendEmail()">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
