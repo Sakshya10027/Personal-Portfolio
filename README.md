@@ -1,72 +1,59 @@
-# CampusSync
+# Personal Portfolio
 
-> A simple static front‑end for **CampusSync** — a campus‑oriented UI built with HTML, CSS and JavaScript.  
-> **Live Demo:** https://campus-sync-alpha.vercel.app
+A responsive personal portfolio showcasing featured projects, skills, and contact information. Built with HTML, CSS, and vanilla JavaScript.
 
----
+## Features
 
-## 📌 Table of Contents
-- About
-- Demo
-- Tech Stack
-- Project Structure
-- Run Locally
-- Contributing
-- License
-- Contact
+- Smooth section navigation and active link highlighting
+- Animated hero subtitle typewriter effect
+- Responsive grid for projects and skills
+- Project descriptions with internal scroll (scrollbar hidden)
+- Contact form with client-side validation
+- Email delivery via EmailJS
 
----
+## Tech Stack
 
-## 📝 About
-CampusSync is a static front-end prototype designed to showcase a clean, user-friendly interface for campus-related interactions.
+- HTML, CSS, JavaScript
+- Font Awesome, Google Fonts
+- EmailJS (browser SDK)
 
----
+## Getting Started
 
-## 🚀 Demo
-Live Preview: https://campus-sync-alpha.vercel.app
+1. Clone or download the repository.
+2. Open `index.html` directly in your browser, or use a local server (e.g., VS Code Live Server).
 
----
+## EmailJS Setup
 
-## 🛠 Tech Stack
-- HTML
-- CSS
-- JavaScript
+- Update the public key in `index.html`:
+  - `index.html:16–23` initializes EmailJS with `publicKey`.
+- Set your service and template IDs in `script.js`:
+  - `script.js:8` uses `emailjs.send("SERVICE_ID","TEMPLATE_ID", templateParams)`
 
----
+Steps:
+- Create an EmailJS account and a service/template.
+- Replace `publicKey`, `SERVICE_ID`, and `TEMPLATE_ID` with your values.
 
-## 📁 Project Structure
+Note: EmailJS public keys are safe to include client-side. Keep any real secrets out of the repository.
+
+## Project Structure
+
 ```
-CampusSync/
-│── index.html
-│── style.css
-│── app.js
-│── Design Link.docx
+Portfolio 2/
+├─ index.html
+├─ style.css
+├─ app.js
+├─ script.js
+├─ assets/
+│  ├─ img/
+│  └─ Resume/
+└─ README.md
 ```
 
----
+## License
 
-## 💻 Run Locally
-Clone the repo:
-```bash
-git clone https://github.com/Sakshya2005/CampusSync.git
-```
-Open `index.html` in browser or use a local server.
+No explicit license provided. Contact the author for usage permissions.
 
----
+## Contact
 
-## 🤝 Contributing
-1. Fork  
-2. Branch  
-3. Commit  
-4. Push  
-5. PR
-
----
-
-## 📄 License
-No license yet.
-
----
-
-## 📬 Contact
-Feel free to request more features or docs.
+- Email: `patelsakshya2@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/sakshya-patel-20751232a/`
